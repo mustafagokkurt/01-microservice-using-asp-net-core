@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ProductMicroservice/obj
+/ProductMicroservice/.vs
+/ProductMicroservice/bin/Debug
+/ProductMicroservice/ProductMicroservice/bin
+/ProductMicroservice/ProductMicroservice/obj
+/ProductMicroservice/ProductMicroservice/appsettings.json
+/ProductMicroservice/ProductMicroservice/appsettings.Development.json

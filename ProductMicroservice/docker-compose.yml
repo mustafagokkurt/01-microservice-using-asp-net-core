@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  productmicroservice:
+    image: ${DOCKER_REGISTRY-}productmicroservice
+    build:
+      context: .
+      dockerfile: ProductMicroservice\Dockerfile
+
+
+
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1
+WORKDIR /app
+COPY /bin/Release/netcoreapp3.1/publish /app
+ENTRYPOINT ["dotnet", "DockerizeExample.dll"]
